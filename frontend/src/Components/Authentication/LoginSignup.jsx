@@ -4,18 +4,17 @@ import LockOpenIcon from "@material-ui/icons/LockOpen";
 import { Link, useNavigate } from "react-router-dom";
 import "./LoginSignup.css";
 import { useDispatch, useSelector } from "react-redux";
-import Loader from "../../more/Loader";
 import { clearErrors, login } from "../../actions/userAction";
 import MetaData from "../../more/Metadata";
-import { ToastContainer, toast } from "react-toastify";
+import {  toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Header  from "../Home/Header";
+
 
 const LoginSignup = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const { error, loading, isAuthenticated } = useSelector(
+  const { error,  isAuthenticated } = useSelector(
     (state) => state.user
   );
 
@@ -40,11 +39,7 @@ const LoginSignup = () => {
 
   
   return (
-    // <>
-    // <Header />
-    //   {loading ? (
-    //     <Loader />
-    //   ) : (
+  
       <>
           <MetaData title="Login or Signup" />
           <div className="LoginSignUpContainer">
@@ -87,21 +82,9 @@ const LoginSignup = () => {
               
             </div>
           </div>
-          <ToastContainer
-            position="bottom-center"
-            autoClose={5000}
-            hideProgressBar={false}
-            newestOnTop={false}
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-          />
+         
         </>
       )}
-//     </>
-//   );
-// };
+
 
 export default LoginSignup;
