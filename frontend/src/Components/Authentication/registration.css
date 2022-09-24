@@ -1,0 +1,63 @@
+.signupform{
+    display: grid;
+    grid-template-columns: auto auto;
+  
+    text-align: center;
+    
+}
+ .signupimg{
+    border: 2px 2px 2px 2px solid black;
+    height: 40rem;
+ }
+
+
+    
+ 
+
+ .signup{
+    margin: 4px;
+    
+
+ }
+ .form{
+    margin: 1.5rem;
+    text-align: center;
+   
+    
+    
+    
+ }
+
+ .form input{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 20rem;
+    margin-left:15px ;
+    
+ }
+ .registerimg{
+    margin: 2rem;
+    text-align: center;
+    
+ }
+
+ .registerimg input{
+    
+    width: 20rem;
+    margin-left:15px ;
+ }
+
+ .signupbtn{
+    margin-left: 8rem;
+    margin-top: 1rem;
+    width: 10rem;
+    height: 2rem;
+    background-color: rgb(170, 155, 155);
+    border-radius: 4rem 4rem 4rem 4rem;
+ }
+
+ .signupbtn:hover{
+    color: aliceblue;
+    background-color: rgb(192, 44, 44);
+    
+ }
